@@ -1,0 +1,14 @@
+body {
+    background-color: white; /* Light gray background */
+}
+
+.audio-player {
+    margin: 10px 0; /* Space above and below the audio player */
+    text-align: center; /* Center the audio player */
+}
+
+.audio-player button {
+    font-size: 24px; /* Adjust button size */
+    padding: 10px 20px; /* Button padding */
+    cursor: pointer; /* Cursor change on hover */
+}
