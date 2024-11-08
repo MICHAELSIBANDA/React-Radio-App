@@ -1,14 +1,134 @@
-body {
-    background-color: white; /* Light gray background */
-}
-
-.audio-player {
-    margin: 10px 0; /* Space above and below the audio player */
-    text-align: center; /* Center the audio player */
-}
-
-.audio-player button {
-    font-size: 24px; /* Adjust button size */
-    padding: 10px 20px; /* Button padding */
-    cursor: pointer; /* Cursor change on hover */
-}
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .radio-container {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  /* Music Wave GIF */
+  .music-wave {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .music-wave img {
+    width: 500px;
+    height: auto;
+  }
+  
+  /* Main Player Section */
+  .main-player {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+  }
+  
+  .main-title h1 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .main-title p {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  /* Animated Heading */
+  .animated-heading h1 {
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out infinite alternate;
+  }
+  
+  .animated-heading button {
+    font-size: 30px;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+    animation: fadeIn 1.5s ease-in-out infinite alternate;
+  }
+  
+  /* Fade in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0.3;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Recent Episodes Section */
+  .recent-episodes .episode {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .episode-details h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .episode-details p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .episode-details small {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    .radio-container {
+      padding: 10px;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .radio-container {
+      padding: 15px;
+    }
+  }
+  
